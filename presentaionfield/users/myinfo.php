@@ -1,7 +1,9 @@
 <?php include ('../../datafield/server.php');?>
 <!DOCTYPE html>
 <?php 
-$mysqli = new mysqli("localhost", "root", "", "shri");
+$mysqli = new mysqli("localhost", "root", "", "shri"); //databse var
+
+
 if(!isset($_SESSION['login_sess']))
 {
 	header("location: ../../loginfield/Ulogin.php");

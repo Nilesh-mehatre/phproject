@@ -49,12 +49,8 @@ if($result = mysqli_fetch_array($findresult))
     if(isset($_POST['update_profile']))
     {
 
-		if (isset($array['userName'])) {
-
-			$userName = $mysqli->real_escape_string($_POST['userName']);
-			
-		  }
-        
+		
+		$userName = $mysqli->real_escape_string($_POST['userName']);	
 		$Email = $mysqli->real_escape_string($_POST['Email']);
 		$Address = $mysqli->real_escape_string($_POST['Address']);
 		$ContactNumber = $mysqli->real_escape_string($_POST['ContactNumber']);
