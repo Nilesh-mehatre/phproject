@@ -16,6 +16,8 @@ if($result = mysqli_fetch_array($findresult))
 	$Address = $result['Address'];
 	$ContactNumber = $result['ContactNumber'];
 	$Email = $result['Email'];
+	$_SESSION['email'] =  $result['Email'];
+
 }
 ?>
 <html>

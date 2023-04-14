@@ -70,7 +70,7 @@ if(!isset($_SESSION['login_sess']))
 
 
 
-		$uemail = $Email;
+		$uemail = $_SESSION['email'];
 		$common_email = $uemail;
 		$sql3 = "SELECT * 
 FROM bookAppointment AS book 
